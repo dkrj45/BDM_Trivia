@@ -618,33 +618,38 @@ function showQuestion() {
 
 function checkAnswer(selectedIndex) {
     stopTimer();
-    const allButtons = document.querySelectorAll(".answers .answers-button");
-    allButtons.forEach(btn => btn.disabled = true);
-
     const q = currentQuestions[currentQuestion];
     const isCorrect = selectedIndex === q.correct;
+    const allButtons = document.querySelectorAll(".answers .answers-button");
+    allButtons.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === q.correct) btn.classList.add("correct-answer");
+        if (idx === selectedIndex && !isCorrect) btn.classList.add("incorrect-answer");
+    });
+
     if (isCorrect) score++;
 
     scoreEl.textContent = currentLanguage === 'en' ? `Score: ${score}/${currentQuestions.length}` : `Score: ${score}/${currentQuestions.length}`;
 
-    // Display correct/incorrect message above bullet points
     feedbackEl.innerHTML = ""; // clear previous
-    // Create the correct/incorrect message div
     const statusDiv = document.createElement("div");
-    statusDiv.className = "answer-status";  // base class
+    statusDiv.className = "answer-status";
     statusDiv.textContent = isCorrect ? (currentLanguage === 'en' ? "Correct!" : "Correct !") : (currentLanguage === 'en' ? "Incorrect!" : "Incorrect !");
-
-    // Add the correct/incorrect class for color
     statusDiv.classList.add(isCorrect ? "correct" : "incorrect");
-
-    // Append it to the feedback container
     feedbackEl.appendChild(statusDiv);
 
-    // Display 4 bullet points
+    const answerText = document.createElement("div");
+    answerText.className = "correct-answer-text";
+    answerText.textContent = currentLanguage === 'en' ? `Correct answer: ${q.answers[q.correct]}` : `Bonne réponse : ${q.answers[q.correct]}`;
+    feedbackEl.appendChild(answerText);
+
     const ul = document.createElement("ul");
-    q.message.forEach(msg => {
+    q.message.forEach((msg, idx) => {
         const li = document.createElement("li");
-        li.textContent = msg;
+        li.textContent = `${q.answers[idx]} — ${msg}`;
+        if (idx === q.correct) {
+            li.classList.add("correct-description-item");
+        }
         ul.appendChild(li);
     });
     feedbackEl.appendChild(ul);
