@@ -544,13 +544,17 @@ const imageEl = document.getElementById("question-image");
 const imageCreditEl = document.getElementById("image-credit");
 
 function switchLanguage() {
+    const timerActive = timerInterval != null;
     currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
     currentQuestions = currentLanguage === 'en' ? questions : frenchQuestions;
+    if (currentQuestion >= currentQuestions.length) {
+        currentQuestion = currentQuestions.length - 1;
+    }
     document.documentElement.lang = currentLanguage;
     document.title = currentLanguage === 'en' ? "ProM Fiscal Year End Celebration Trivia" : "Trivia de la Célébration de Fin d'Exercice de ProM";
     document.querySelector("h1").textContent = currentLanguage === 'en' ? "ProM Fiscal Year End Celebration Trivia" : "Trivia de la Célébration de Fin d'Exercice de ProM";
     langToggle.textContent = currentLanguage === 'en' ? "Français" : "English";
-    resetQuiz();
+    if (timerActive) stopTimer();
     showQuestion();
 }
 
@@ -562,14 +566,20 @@ function resetQuiz() {
 }
 
 function startTimer() {
+    stopTimer();
     timerInterval = setInterval(() => {
         time++;
-        timerEl.textContent = currentLanguage === 'en' ? `Time: ${time}s` : `Temps: ${time}s`;
+        updateTimerDisplay();
     }, 1000);
 }
 
 function stopTimer() {
     clearInterval(timerInterval);
+    timerInterval = null;
+}
+
+function updateTimerDisplay() {
+    timerEl.textContent = currentLanguage === 'en' ? `Time: ${time}s` : `Temps: ${time}s`;
 }
 
 function showQuestion() {
@@ -594,6 +604,7 @@ function showQuestion() {
         imageCreditEl.textContent = "";
     }
 
+    updateTimerDisplay();
     startTimer();
 
     q.answers.forEach((answer, index) => {
