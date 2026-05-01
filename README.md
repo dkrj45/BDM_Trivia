@@ -1,1 +1,0 @@
-# BDM_Trivia
