@@ -1,240 +1,262 @@
 const questions = [
-    { 
-        question: "How do you say 'Christmas' in French?", 
-        answers: ["Kurisumasu","Krismäs","Weihnachten","Noël"], 
-        correct: 3,
-        image: "images/French.jpg",
-        credit: "The Best Christmas Markets in Canada - Canadian Affair",
-        message:[
-            "Kurisumasu is the romanization of the Japanese word for Christmas 'クリスマス'",
-            "Krismäs is something I made up. Hopefully the umlaut gave it an air of legitimacy though",
-            "Weihnachten is the German term for Christmas",
-            "The French term for Christmas is indeed Noël"
-        ]
-    },
-    { 
-        question: "We all know Santa Claus, but he goes by many other names as well. Which of the following is not a common name for Santa Claus?", 
-        answers: ["Saint Nicholas","Father Christmas","Elder Noël","Old Saint Nick"], 
+    {
+        question: "Which province recorded the most snowfall during the 2025–2026 winter season?",
+        answers: ["British Columbia", "Newfoundland & Labrador", "Ontario", "Quebec"],
         correct: 2,
-        image: "images/Santa Claus.jpg",
-        credit: "Santa Claus - Christmas Wiki",
-        message:[
-            "Saint Nicholas, patron saint of children, sailors, merchants, among other groups, was a bishop in the year 270-343 from modern-day Turkey",
-            "He was famous for gift-giving and helping out the poor and his feast day on December 6th eventually became associated with giving small presents in Europe"
+        image: "images/snowfall.jpg",
+        credit: "Environment and Climate Change Canada",
+        message: [
+            "BC has high elevation snow, but didn't take the top spot this year.",
+            "Usually a leader, but Newfoundland saw a milder winter than central Canada.",
+            "Ontario had a historic winter with some regions hitting over 490 cm.",
+            "Quebec had a heavy winter, but fell just short of Ontario's record-breaking totals."
         ]
     },
-    { 
-        question: "Which of the following species is not commonly used for Christmas trees?", 
-        answers: ["Pine","Oak","Fir","Spruce"], 
-        correct: 1,
-        image: "images/Christmas Tree.jpg",
-        credit: "Why Christmas Trees? Learn About Christmas Trees - The Living Urn",
-        message:[
-            "Pine, Fir, and Spruce are all considered evergreen trees, meaning they keep their leaves (needles) all year-round",
-            "Oak trees meanwhile are deciduous, meaning that they shed their leaves in the fall"
-        ]
-    },
-    { 
-        question: "The Church of Rome formally started celebrating Christmas on December 25 around the year 336. Who was the Roman Emperor reigning at the time?", 
-        answers: ["Julius Caesar","Constantine I","Constantine II","Augustus"], 
-        correct: 1,
-        image: "images/Roman.jpg",
-        credit: "Have Yourself a Roman Christmas! Here's How Ancient Holiday Customs Live on Today - artnet",
-        message:[
-            "Julius Caesar lived from 100 to 44 BC, a far cry from 336 AD",
-            "Constantine I, also known as Constantine the Great, was the first Roman emperor to convert to Christianity",
-            "Constantine II is Constantine I's son, who while interesting, is only an option here to confuse",
-            "Augustus, also known as Octavian, is the founder of the Roman Empire and thus the first emperor. His rule was from 27 BC to 14 AD and thus also many years prior to Constantine I"
-        ]
-    },
-    { 
-        question: "Christmas trees have been around in Germany for centuries, but it was not popularized in England and North America until 1848 after this famous Queen and her consort were illustrated with one? Who was this pair?", 
-        answers: ["Queen Elizabeth I & Prince Robert","Queen Elizabeth II & Prince Philip","Queen Victoria & Prince Albert","Queen Mary I & Philip II of Spain"], 
+    {
+        question: "Who is the Canadian astronaut selected for NASA’s Artemis II mission?",
+        answers: ["David Saint-Jacques", "Chris Hadfield", "Jeremy Hansen", "Robert Thirsk"],
         correct: 2,
-        image: "images/Queen Victoria.jpg",
-        credit: "How Queen <hidden due to spoiler> and Prince <hidden due to spoiler> Made Christmas Trees a Holiday Staple - Town & Country",
-        message:[
-            "Queen Elizabeth I reigned from 1558-1603",
-            "Queen Elizabeth II reigned from 1952-2022",
-            "Queen Victoria, who reigned from 1837-1901 (longer than any of her predecessors), was quite a trendsetter. Many traditions we observe today can be attributed to her",
-            "Queen Mary I, more well-known as Bloody Mary, lived from 1553-1558"
+        image: "images/astronaut.jpg",
+        credit: "Canadian Space Agency",
+        message: [
+            "David Saint-Jacques completed a mission to the ISS in 2018, but isn't on Artemis II.",
+            "Chris Hadfield is a Canadian icon, but he is currently retired from active spaceflight.",
+            "Jeremy Hansen will be the first Canadian to travel to the Moon.",
+            "Robert Thirsk is a veteran astronaut who holds the record for most time in space by a Canadian."
         ]
     },
-    { 
-        question: "Which war saw the Christmas Truce of <Year hidden due to spoilers>, where there were a series of unofficial ceasefires occurred and soldiers from opposite sides mingled and sometimes exchanged foods and souvenirs?", 
-        answers: ["World War I","World War II","The American Revolution","The War of 1812"], 
+    {
+        question: "Canada will co-host the 2026 FIFA World Cup with which countries?",
+        answers: ["USA & Mexico", "USA & Brazil", "Mexico & Argentina", "USA & United Kingdom"],
         correct: 0,
-        image: "images/Christmas Truce.jpg",
-        credit: "The Christmas Truce - Wikipedia",
-        message:[
-            "The full name of this event is known as the Christmas Truce of 1914, and occured just a few months after the beginning of WWI which lasted from 1914-1918",
-            "There were a few units who arranged ceasefires in the following years as well, but not nearly as widespread"
+        image: "images/worldcup.jpg",
+        credit: "FIFA / Canada Soccer",
+        message: [
+            "This will be the first World Cup hosted by three North American nations.",
+            "Brazil hosted in 2014, but they are not part of the 2026 North American bid.",
+            "Argentina co-hosted the 2030 opener, but isn't part of this 2026 tournament.",
+            "The UK is not involved; matches are spread across Canada, the US, and Mexico."
         ]
     },
-    { 
-        question: "What is this dessert we're looking at here?", 
-        answers: ["Panettone","Croquembouche","Bûche de Noël","Baumkuchen"], 
-        correct: 1,
-        image: "images/Croquembouche.jpg",
-        credit: "<Hidden for Spoiler> - Williams Sonoma",
-        message:[
-            "Panettone is a type of sweet Italian bread traditionally enjoyed around Christmas and New Year",
-            "Croquembouche originates from France and it is a tower of profiteroles bound together with caramel. It's often used as a showpiece dessert because of its impressive height and elegance",
-            "Bûche de Noël or Yule log is also a popular French festive dessert and has origins in the European Yule log tradition",
-            "Baumkuchen is a traditional German cake often known as tree-cake. It's eaten during Christmas, but also weddings and birthdays among other occasions. It is commonly also given as a gift in Japan"
-        ]
-    },
-    { 
-        question: "Which popular Christmas beverage is also sometimes called 'Milk Punch'?", 
-        answers: ["Hot Chocolate","Mulled Wine","Eggnog","Apple Cider"], 
-        correct: 2,
-        image: "images/Milk Punch.jpg",
-        credit: "66 Christmas Cocktail Recipes To Make Everyone's Spirits Bright - Food Network",
-        message:[
-            "For the uninitiated, eggnog is a chilled, sweetened, dairy-based beverage made from milk, cream, sugar, and egg. It is often also served with cinnamon or nutmeg on top",
-            "While it's often served cold, it can also be warmed, like apple cider",
-            "The reason 'punch' is in the nickname is because it traditionally contains alcohol (again like apple cider) but today, you can find variations without it"
-        ]
-    },
-    { 
-        question: "Speaking of putting alcohol in Eggnog though... Which of the following spirit is not usually added to Eggnog?", 
-        answers: ["Whisky (Whiskey, in case you're Irish or from the US)","Brandy","Rum","Gin"], 
+    {
+        question: "What is the most-visited landmark in Canada?",
+        answers: ["CN Tower", "Banff National Park", "Whistler Blackcomb", "Niagara Falls"],
         correct: 3,
-        image: "images/Eggnog.jpg",
-        credit: "Homemade Eggnog - Delish",
-        message:[
-            "Rum is probably the most often used due to its warm and sweet flavor",
-            "Brandy is often added for a rich note that complements the creamy texture",
-            "Bourbon or Whiskey is a popular addition in the US for a slightly smoky or caramel-like flavor",
-            "Gin, meanwhile, would give it more of an herbal flavor"
+        image: "images/landmark.jpg",
+        credit: "Destination Ontario",
+        message: [
+            "The CN Tower is iconic, but its numbers are lower than the massive crowds at the Falls.",
+            "Banff sees millions of visitors, but Niagara Falls still holds the top spot for volume.",
+            "Whistler is a premier ski destination, but it doesn't match the annual foot traffic of Niagara.",
+            "Niagara Falls attracts over 12 million visitors annually."
         ]
     },
-    { 
-        question: "You, me, and everyone on Earth loves poutine, but it's not the only shining star in Canadian cuisine. Which of the following is NOT a Canadian dish?", 
-        answers: ["Croque Monsieur","Butter Tart","Tourtière","Pâté chinois"], 
+    {
+        question: "Which of the following foods is most strongly associated with Montreal’s culinary identity?",
+        answers: ["Tourtière", "Poutine", "Nanaimo Bars", "BeaverTails"],
+        correct: 1,
+        image: "images/poutine.jpg",
+        credit: "Montreal Tourism",
+        message: [
+            "Tourtière is a classic Quebec meat pie, but poutine is more globally synonymous with Montreal.",
+            "While invented in Warwick/Drummondville, poutine is Montreal's most iconic export.",
+            "Nanaimo Bars actually originated in Nanaimo, British Columbia.",
+            "BeaverTails originated in Ottawa, though they are popular across Canada."
+        ]
+    },
+    {
+        question: "What does BDMISDB stand for?",
+        answers: ["Benefits Delivery Modernization Implementation and Service Design Branch", "Benefits Data Management Infrastructure and Systems Development Bureau", "Branch for Digital Modernization, Innovation, Services, and Delivery Base", "Business Development Management and Innovation Strategy Division Board"],
         correct: 0,
-        image: "images/Canadian Food.jpg",
-        credit: "QUEUES DE CASTOR | BEAVERTAILS (SHERBROOKE) - Uber Eats",
-        message:[
-            "Croque Monsieur is a FRENCH sandwich made with ham and cheese like Gruyère",
-            "Butter Tart is a quintessential Canadian dessert especially in Ontario and across the English-speaking provinces",
-            "Tourtière is a French-Canadian meat pie that is actually quite popular during Christmas and New Year's",
-            "Pâté chinois is a classic Québécois comfort food similar to a shepherd's pie that can really be enjoyed all year round. Despite its name, it's not Chinese"
+        image: "images/government.jpg",
+        credit: "Employment and Social Development Canada (ESDC)",
+        message: [
+            "This branch is leading the transformation of EI, OAS, and CPP systems.",
+            "Sounds technical, but 'Bureau' and 'Infrastructure' aren't part of this specific branch name.",
+            "Close, but BDMISDB specifically focuses on the Implementation and Service Design aspects.",
+            "Incorrect. This sounds more like a corporate board than a government service branch."
         ]
     },
-    { 
-        question: "Which of the following Canadian city has never hosted a Winter Olympics game?", 
-        answers: ["Calgary","Montreal","Vancouver"], 
-        correct: 1,
-        image: "images/Winter Olympics.jpg",
-        credit: "Every Sport in the Winter Olympics, Ranked - Slate",
-        message:[
-            "Calgary, Alberta hosted the Winter Games in 1988",
-            "Montreal, Québec hosted the SUMMER Games in 1976",
-            "Vancouver, British Columbia hosted the Winter Games in 2010"
-        ]
-    },
-    { 
-        question: "This year, we saw the disheartening news that Hudson's Bay/The Bay is closing its doors. In its heyday though, it has acquired quite a few other department stores. Who is the imposter here?", 
-        answers: ["Freimans","Morgan's","Harrods","Simpsons"], 
+    {
+        question: "Which Canadian province generates the highest percentage of its electricity from hydroelectric power?",
+        answers: ["British Columbia", "Newfoundland & Labrador", "Quebec", "Manitoba"],
         correct: 2,
-        image: "images/Hudson's Bay.jpg",
-        credit: "Hudson's Bay (Department Store) - Wikipedia",
-        message:[
-            "Freimans, Morgan's, and Simpsons were all Canadian department stores that were eventually converted to The Bay",
-            "Harrods meanwhile is a department store in London, England and is one of the oldest department stores in the world that's still standing"
+        image: "images/hydro.jpg",
+        credit: "Hydro-Québec",
+        message: [
+            "BC uses a lot of hydro, but Quebec's percentage and total scale are higher.",
+            "Newfoundland has massive hydro projects like Churchill Falls, but relies on more varied sources overall.",
+            "Over 94% of Quebec's electricity is generated by its massive hydro network.",
+            "Manitoba is a major hydro producer, but Quebec remains the national leader in total output."
         ]
     },
-    { 
-        question: "To us Canadians, Christmas and winter go hand-in-hand together, but that's not the case everywhere. Which of the following countries is Christmas a summer celebration?", 
-        answers: ["Sweden","Australia","China","Mexico"], 
+    {
+        question: "Which Canadian city has the largest Indigenous population?",
+        answers: ["Winnipeg", "Toronto", "Edmonton", "Vancouver"],
         correct: 1,
-        image: "images/Australian Christmas.jpg",
-        credit: "7 Australian Christmas Traditions You May Not Know - Y Suites",
-        message:[
-            "The Northern Hemisphere & Southern Hemisphere's seasons are the opposite of one another, so winter for us is summer for them"
+        image: "images/toronto_skyline.jpg",
+        credit: "Statistics Canada",
+        message: [
+            "Winnipeg has the highest *proportion* of Indigenous residents, but not the highest total number.",
+            "Toronto has the largest total number of Indigenous people in Canada.",
+            "Edmonton has a very large population, but it sits behind Toronto in total count.",
+            "Vancouver has a significant population, but it ranks 4th behind Toronto, Winnipeg, and Edmonton."
         ]
     },
-    { 
-        question: "Christmas may not be a traditional Japanese holiday, but in the 1970s, this fast food brand launched an extremely successful campaign and established itself as a holiday must-eat. Which chain was it?", 
-        answers: ["Yoshinoya (吉野家)","Baskin-Robbins","KFC","Pizza Hut"], 
-        correct: 2,
-        image: "images/Japanese Christmas.jpg",
-        credit: "Japanese Christmas Cake - Japan Centre",
-        message:[
-            "Yoshinoya is a Japanese fast food chain that specializes in gyūdon also known as beef bowls",
-            "Baskin-Robbins is very well established in Korea for their Christmas ice cream cakes, but not in Japan",
-            "Takeshi Okawara who managed the first KFC in Japan overheard some expats saying they missed eating turkey for Christmas and decided to introduced a party bucket in 1974 with the slogan 'Kentucky is Christmas! (ケンタッキーはクリスマス！)",
-            "Pizza Hut has a massive presence in China and is sometimes associated with Christmas there, but not in Japan"
-        ]
-    },
-    { 
-        question: "In Western culture, we're told that naughty children will receive coal on Christmas, but in Central European folklore (which can be quite dark), there is another being or beings who might show up in front of them instead of Santa. Who is it/are they?", 
-        answers: ["Baba Yaga","Krampus","Minotaur","Gnomes"], 
-        correct: 1,
-        image: "images/Krampus.jpg",
-        credit: "Christmas - Britannica",
-        message:[
-            "Baba Yaga is a figure from Slavic folklore and is depicted as an old woman with a long nose and lives in a hut that stands on chicken legs. Her tale is not for the faint of heart",
-            "Krampus is a horned, half-goat, half-demon creature who is the counterpart of Saint Nicholas",
-            "Minotaur is a mythical creature in Greek mythology with the head of a bull and the body of a man. Nothing to do with Christmas",
-            "Christmas gnomes are popular in Scandinavian folklore as mischievous protectors of homes and farms that bring luck and gifts. They are generally nice though"
-        ]
-    },
-    { 
-        question: "In the Chronicle of Narnia's second book/movie 'The Lion, the Witch and the Wardrobe, what does Santa Claus give Susan & Lucy?", 
-        answers: ["A bow and arrows & A healing potion","A bow and arrows & Turkish Delights","A healing potion & Turkish Delights","Baklava & Turkish Delights"], 
-        correct: 0,
-        image: "images/Narnia.jpg",
-        credit: "The Lion, the Witch and the Wardrobe - Indigo",
-        message:[
-            "Turkish Delights is what the White Witch gives their sibling, Edmund",
-            "Baklava is a delicious dessert with roots in the Byzantine and Ottoman Empires and today famous in Turkey though you can find variations in many cultures. It does not appear in the Narnia series though"
-        ]
-    },
-    { 
-        question: "In the Christmas movie 'Elf', what's the name of the main character played by Will Ferrell?", 
-        answers: ["Hobbs","Eldrin","Patrick","Buddy"], 
+    {
+        question: "Which Canadian province was the last to join Confederation?",
+        answers: ["Alberta", "Saskatchewan", "Nunavut", "Newfoundland & Labrador"],
         correct: 3,
-        image: "images/Elf.jpg",
-        credit: "Elf (2003) - IMDb",
-        message:[
-            "If in doubt about what to watch on Christmas, this movie will never fail you"
+        image: "images/confederation.jpg",
+        credit: "Library and Archives Canada",
+        message: [
+            "Alberta joined in 1905, nearly 45 years before the final province joined.",
+            "Saskatchewan also joined in 1905 along with Alberta.",
+            "Nunavut is a territory, not a province, and was created in 1999.",
+            "Newfoundland and Labrador joined Canada in 1949."
         ]
     },
-    { 
-        question: "In another classic Christmas movie, 'Home Alone 2: Lost in New York', our main character Kevin McCallister is finally reunited with his mother, Kate, at this location.", 
-        answers: ["Times Square","Central Park","Rockefeller Center","FAO Schwarz"], 
+    {
+        question: "Which Canadian company is the world’s largest producer of potash?",
+        answers: ["Teck Resources", "Barrick Gold", "Nutrien", "Cameco"],
         correct: 2,
-        image: "images/Home Alone.jpg",
-        credit: "Home Alone 2: Lost in New York - Wikipedia",
-        message:[
-            "The Rockefeller Center Christmas Tree is traditionally a Norway spruce measuring at least 75 feet tall and 45 feet in diameter, which is approximately 23 meters high and 14 meters in diameter. It's not the tallest Christmas tree in the world, but it's certainly a sight to behold.",
-            "FAO Schwarz is the real-life toy store that inspired Duncan's Toy Chest in the movie."
+        image: "images/potash.jpg",
+        credit: "Nutrien Corporate",
+        message: [
+            "Teck is a major mining company, but they focus on copper, zinc, and steelmaking coal.",
+            "Barrick Gold is one of the world's largest gold miners, not a potash producer.",
+            "Saskatoon-based Nutrien is the world's top producer of potash.",
+            "Cameco is the world's largest publicly traded uranium company."
         ]
     },
-    { 
-        question: "In the original poem 'A Visit from St. Nicholas' more commonly known by the name 'The Night Before Christmas', we are introduced to the reindeers that pull Santa's sleigh: Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner, and Blitzen. The 9th reindeer we love today named Rudolph however, does not come from the same poem. Who is the creator?", 
-        answers: ["Clement C. Moore, the author of the poem","Johnny Marks the songwriter behind 'Rudolf the Red-Nosed Reindeer'","Robert L. May, an author for Montgomery Ward department store","Frank Capra, the director of iconic Christmas movie 'It's a Wonderful Life'"], 
+    {
+        question: "Which Canadian city is home to the busiest cargo port in the country?",
+        answers: ["Montreal", "Halifax", "Vancouver", "Prince Rupert"],
         correct: 2,
-        image: "images/Rudolph.jpg",
-        credit: "Gene Autry Rudolph the Red-Nosed Reindeer - Genius",
-        message:[
-            "In 1939, Robert L. May was asked by his boss at Montgomery Ward to write a 'cheery children's book' with an animal as titular character, having been inspired by Walt Disney's recently released short-film, Ferdinand the Bull",
-            "So while some might think Clement C. Moore invented Rudolph along with the other eight reindeer, that is not the case"
+        image: "images/port.jpg",
+        credit: "Port of Vancouver",
+        message: [
+            "Montreal is a major inland port, but it handles less tonnage than the West Coast.",
+            "Halifax is a key Atlantic gateway, but doesn't reach Vancouver's volume.",
+            "The Port of Vancouver is the largest and busiest in Canada.",
+            "Prince Rupert is growing fast due to its proximity to Asia, but Vancouver is still #1."
         ]
     },
-    { 
-        question: "Who is the author of the novella 'A Christmas Carol'?", 
-        answers: ["Clement C. Moore","Charles Dickens","Lucy Maud Montgomery","J.D. Salinger"], 
+    {
+        question: "Which Canadian territory contains the northernmost permanently inhabited place on Earth?",
+        answers: ["Yukon", "Northwest Territories", "Nunavut", "None of the above"],
+        correct: 2,
+        image: "images/arctic.jpg",
+        credit: "Canadian Armed Forces",
+        message: [
+            "Yukon is home to the highest peak (Mt. Logan), but not the northernmost settlement.",
+            "NWT reaches the Arctic coast, but Nunavut extends much further north.",
+            "Alert, Nunavut, is the northernmost permanently inhabited place on Earth.",
+            "Actually, it is a territory—the answer is Nunavut!"
+        ]
+    },
+    {
+        question: "Which Canadian province has the highest number of UNESCO World Heritage Sites?",
+        answers: ["Alberta", "British Columbia", "Nova Scotia", "Quebec"],
+        correct: 2,
+        image: "images/unesco.jpg",
+        credit: "Parks Canada",
+        message: [
+            "Alberta has several sites like Head-Smashed-In Buffalo Jump, but ranks behind Nova Scotia.",
+            "BC has fewer UNESCO sites compared to the Atlantic coast.",
+            "Nova Scotia has three sites: Lunenburg, Joggins Cliffs, and Grand Pré.",
+            "Quebec has two sites (Old Quebec and Miguasha), but Nova Scotia has three."
+        ]
+    },
+    {
+        question: "Which Canadian bank is the oldest, founded in 1817?",
+        answers: ["RBC", "CIBC", "Bank of Montreal (BMO)", "Scotiabank"],
+        correct: 2,
+        image: "images/bmo.jpg",
+        credit: "BMO Financial Group",
+        message: [
+            "RBC was founded in Halifax in 1864, much later than BMO.",
+            "CIBC was formed by a merger, with its oldest roots dating to 1867.",
+            "BMO was founded in 1817 and holds the first banking charter in Canada.",
+            "Scotiabank was founded in Halifax in 1832."
+        ]
+    },
+    {
+        question: "Which Canadian city is home to the country's largest aerospace industry hub?",
+        answers: ["Toronto", "Montreal", "Calgary", "Ottawa"],
         correct: 1,
-        image: "images/A Christmas Carol.jpg",
-        credit: "A Christmas Carol - Disney Wiki",
-        message:[
-            "As mentioned in question 19, Clement C. Moore is the author of the poem 'The Night Before Christmas'",
-            "Aside from famous works like 'Oliver Twist', 'A Tale of Two Cities', and 'Great Expectations', Charles Dickens is also the author of A Christmas Carol",
-            "Lucy Maud Montgomery is the Canadian author behind 'Anne of Green Gables'. Though not quite Christmas-related, is a heart-warming read if you're in the mood for a change of pace this Christmas",
-            "J.D. Salinger is the author of 'The Catcher in the Rye'. Not quite Christmas themed either, but the story does take place in December of 1949"
+        image: "images/aerospace.jpg",
+        credit: "Aéro Montréal",
+        message: [
+            "Toronto has a significant aerospace presence, but Montreal is the global hub.",
+            "Montreal is one of the top aerospace cities in the world, alongside Seattle and Toulouse.",
+            "Calgary has a growing tech sector, but is not the primary aerospace hub.",
+            "Ottawa focuses more on defense and telecommunications than commercial aerospace."
+        ]
+    },
+    {
+        question: "Which province is the only one where civil law (rather than common law) is the foundation of private law?",
+        answers: ["New Brunswick", "Manitoba", "Quebec", "Nova Scotia"],
+        correct: 2,
+        image: "images/courthouse.jpg",
+        credit: "Justice Canada",
+        message: [
+            "New Brunswick follows English Common Law for its private legal matters.",
+            "Manitoba, like most of Canada, is a Common Law jurisdiction.",
+            "Quebec is the only province that uses a Civil Code for private law.",
+            "Nova Scotia follows the Common Law system."
+        ]
+    },
+    {
+        question: "Which Canadian national park is the largest by land area?",
+        answers: ["Banff", "Jasper", "Nahanni", "Wood Buffalo"],
+        correct: 3,
+        image: "images/nationalpark.jpg",
+        credit: "Parks Canada",
+        message: [
+            "Banff was Canada's first national park, but it is much smaller than Wood Buffalo.",
+            "Jasper is the largest in the Rockies, but Wood Buffalo is twice its size.",
+            "Nahanni is massive and beautiful, but Wood Buffalo still holds the land area record.",
+            "Wood Buffalo National Park is larger than Switzerland!"
+        ]
+    },
+    {
+        question: "Which Canadian city was the first to host the Winter Olympics?",
+        answers: ["Vancouver", "Calgary", "Montreal", "Quebec City"],
+        correct: 1,
+        image: "images/olympics.jpg",
+        credit: "Olympic.ca",
+        message: [
+            "Vancouver hosted in 2010, which was 22 years after the first Canadian Winter Games.",
+            "Calgary hosted the Winter Olympics in 1988.",
+            "Montreal hosted the Summer Olympics in 1976, but has never hosted the Winter Games.",
+            "Quebec City has bid for the games but has never hosted them."
+        ]
+    },
+    {
+        question: "Which Canadian province has the highest percentage of French speakers outside Quebec?",
+        answers: ["Manitoba", "Ontario", "New Brunswick", "Nova Scotia"],
+        correct: 2,
+        image: "images/bilingual.jpg",
+        credit: "Office of the Commissioner of Official Languages",
+        message: [
+            "Manitoba has a proud Francophone community, but it is smaller as a percentage than NB.",
+            "Ontario has the largest *number* of Francophones outside Quebec, but not the highest *percentage*.",
+            "New Brunswick is about 33% Francophone and is officially bilingual.",
+            "Nova Scotia has the Acadian community, but the total percentage is lower than New Brunswick."
+        ]
+    },
+    {
+        question: "Which Canadian company invented the world’s first practical snowmobile?",
+        answers: ["John Deere Canada", "Canadian Tire", "Bombardier", "Polaris Canada"],
+        correct: 2,
+        image: "images/snowmobile.jpg",
+        credit: "Bombardier Museum",
+        message: [
+            "John Deere is famous for tractors, but not the invention of the snowmobile.",
+            "Canadian Tire sells snowmobile gear, but they are a retailer, not the inventor.",
+            "J-Armand Bombardier invented the snowmobile to help people travel in winter.",
+            "Polaris is a major manufacturer, but they didn't invent the practical snowmobile."
         ]
     }
 ];
