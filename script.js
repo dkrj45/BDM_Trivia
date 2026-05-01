@@ -261,6 +261,271 @@ const questions = [
     }
 ];
 
+const frenchQuestions = [
+    {
+        question: "Quelle province a enregistré le plus de neige pendant la saison hivernale 2025-2026 ?",
+        answers: ["Colombie-Britannique", "Terre-Neuve-et-Labrador", "Ontario", "Québec"],
+        correct: 2,
+        image: "images/snowfall.jpg",
+        credit: "Environnement et Changement climatique Canada",
+        message: [
+            "La Colombie-Britannique a de la neige en altitude élevée, mais n'a pas pris la première place cette année.",
+            "Habituellement un leader, mais Terre-Neuve a vu un hiver plus doux que le centre du Canada.",
+            "L'Ontario a eu un hiver historique avec certaines régions dépassant 490 cm.",
+            "Le Québec a eu un hiver lourd, mais est juste en dessous des totaux record de l'Ontario."
+        ]
+    },
+    {
+        question: "Qui est l'astronaute canadien sélectionné pour la mission Artemis II de la NASA ?",
+        answers: ["David Saint-Jacques", "Chris Hadfield", "Jeremy Hansen", "Robert Thirsk"],
+        correct: 2,
+        image: "images/astronaut.jpg",
+        credit: "Agence spatiale canadienne",
+        message: [
+            "David Saint-Jacques a terminé une mission à l'ISS en 2018, mais n'est pas sur Artemis II.",
+            "Chris Hadfield est une icône canadienne, mais il est actuellement retraité du vol spatial actif.",
+            "Jeremy Hansen sera le premier Canadien à voyager vers la Lune.",
+            "Robert Thirsk est un astronaute vétéran qui détient le record du temps le plus long en espace par un Canadien."
+        ]
+    },
+    {
+        question: "Le Canada co-organisera la Coupe du Monde de la FIFA 2026 avec quels pays ?",
+        answers: ["États-Unis et Mexique", "États-Unis et Brésil", "Mexique et Argentine", "États-Unis et Royaume-Uni"],
+        correct: 0,
+        image: "images/worldcup.jpg",
+        credit: "FIFA / Canada Soccer",
+        message: [
+            "Ce sera la première Coupe du Monde organisée par trois nations nord-américaines.",
+            "Le Brésil a organisé en 2014, mais ils ne font pas partie de l'offre nord-américaine 2026.",
+            "L'Argentine co-organisera l'ouverture 2030, mais ne fait pas partie de ce tournoi 2026.",
+            "Le Royaume-Uni n'est pas impliqué ; les matchs sont répartis au Canada, aux États-Unis et au Mexique."
+        ]
+    },
+    {
+        question: "Quel est le monument le plus visité au Canada ?",
+        answers: ["Tour CN", "Parc national de Banff", "Whistler Blackcomb", "Chutes du Niagara"],
+        correct: 3,
+        image: "images/landmark.jpg",
+        credit: "Destination Ontario",
+        message: [
+            "La Tour CN est emblématique, mais ses chiffres sont inférieurs aux foules massives aux Chutes.",
+            "Banff voit des millions de visiteurs, mais les Chutes du Niagara détiennent toujours la première place en volume.",
+            "Whistler est une destination de ski de premier plan, mais ne correspond pas au trafic piétonnier annuel des Chutes du Niagara.",
+            "Les Chutes du Niagara attirent plus de 12 millions de visiteurs par an."
+        ]
+    },
+    {
+        question: "Lequel des aliments suivants est le plus fortement associé à l'identité culinaire de Montréal ?",
+        answers: ["Tourtière", "Poutine", "Barres Nanaimo", "BeaverTails"],
+        correct: 1,
+        image: "images/poutine.jpg",
+        credit: "Tourisme Montréal",
+        message: [
+            "La tourtière est une tarte à la viande classique du Québec, mais la poutine est plus globalement synonyme de Montréal.",
+            "Bien qu'inventée à Warwick/Drummondville, la poutine est l'exportation la plus emblématique de Montréal.",
+            "Les barres Nanaimo sont originaires de Nanaimo, en Colombie-Britannique.",
+            "Les BeaverTails sont originaires d'Ottawa, bien qu'ils soient populaires dans tout le Canada."
+        ]
+    },
+    {
+        question: "Que signifie BDMISDB ?",
+        answers: ["Direction de la Modernisation des Prestations, de l'Implémentation et de la Conception des Services", "Bureau de Gestion des Données des Prestations et d'Infrastructure des Systèmes", "Branche de la Modernisation Numérique, de l'Innovation, des Services et de la Base de Livraison", "Conseil de Division de Développement Commercial et de Stratégie d'Innovation"],
+        correct: 0,
+        image: "images/government.jpg",
+        credit: "Emploi et Développement social Canada (EDSC)",
+        message: [
+            "Cette branche dirige la transformation des systèmes d'AE, de SV et de RPC.",
+            "Semble technique, mais 'Bureau' et 'Infrastructure' ne font pas partie de ce nom de branche spécifique.",
+            "Proche, mais BDMISDB se concentre spécifiquement sur les aspects d'Implémentation et de Conception des Services.",
+            "Incorrect. Cela ressemble plus à un conseil d'entreprise qu'à une branche de service gouvernemental."
+        ]
+    },
+    {
+        question: "Quelle province canadienne génère le pourcentage le plus élevé de son électricité à partir de l'énergie hydroélectrique ?",
+        answers: ["Colombie-Britannique", "Terre-Neuve-et-Labrador", "Québec", "Manitoba"],
+        correct: 2,
+        image: "images/hydro.jpg",
+        credit: "Hydro-Québec",
+        message: [
+            "La Colombie-Britannique utilise beaucoup d'hydro, mais le pourcentage et l'échelle totale du Québec sont plus élevés.",
+            "Terre-Neuve a des projets hydro massifs comme Churchill Falls, mais dépend de sources plus variées dans l'ensemble.",
+            "Plus de 94 % de l'électricité du Québec est générée par son réseau hydro massif.",
+            "Le Manitoba est un producteur hydro majeur, mais le Québec reste le leader national en production totale."
+        ]
+    },
+    {
+        question: "Quelle ville canadienne a la plus grande population autochtone ?",
+        answers: ["Winnipeg", "Toronto", "Edmonton", "Vancouver"],
+        correct: 1,
+        image: "images/toronto_skyline.jpg",
+        credit: "Statistique Canada",
+        message: [
+            "Winnipeg a la plus haute *proportion* de résidents autochtones, mais pas le nombre total le plus élevé.",
+            "Toronto a le plus grand nombre total de personnes autochtones au Canada.",
+            "Edmonton a une population très grande, mais elle est derrière Toronto en nombre total.",
+            "Vancouver a une population significative, mais elle se classe 4e derrière Toronto, Winnipeg et Edmonton."
+        ]
+    },
+    {
+        question: "Quelle province canadienne a été la dernière à rejoindre la Confédération ?",
+        answers: ["Alberta", "Saskatchewan", "Nunavut", "Terre-Neuve-et-Labrador"],
+        correct: 3,
+        image: "images/confederation.jpg",
+        credit: "Bibliothèque et Archives Canada",
+        message: [
+            "L'Alberta a rejoint en 1905, près de 45 ans avant que la dernière province ne rejoigne.",
+            "La Saskatchewan a également rejoint en 1905 avec l'Alberta.",
+            "Le Nunavut est un territoire, pas une province, et a été créé en 1999.",
+            "Terre-Neuve-et-Labrador a rejoint le Canada en 1949."
+        ]
+    },
+    {
+        question: "Quelle entreprise canadienne est le plus grand producteur mondial de potasse ?",
+        answers: ["Teck Resources", "Barrick Gold", "Nutrien", "Cameco"],
+        correct: 2,
+        image: "images/potash.jpg",
+        credit: "Nutrien Corporate",
+        message: [
+            "Teck est une grande entreprise minière, mais elle se concentre sur le cuivre, le zinc et le charbon sidérurgique.",
+            "Barrick Gold est l'un des plus grands mineurs d'or au monde, pas un producteur de potasse.",
+            "Nutrien basé à Saskatoon est le premier producteur mondial de potasse.",
+            "Cameco est la plus grande entreprise cotée en bourse d'uranium au monde."
+        ]
+    },
+    {
+        question: "Quelle ville canadienne abrite le port de fret le plus occupé du pays ?",
+        answers: ["Montréal", "Halifax", "Vancouver", "Prince Rupert"],
+        correct: 2,
+        image: "images/port.jpg",
+        credit: "Port de Vancouver",
+        message: [
+            "Montréal est un port intérieur majeur, mais il gère moins de tonnage que la côte ouest.",
+            "Halifax est une passerelle atlantique clé, mais n'atteint pas le volume de Vancouver.",
+            "Le Port de Vancouver est le plus grand et le plus occupé au Canada.",
+            "Prince Rupert se développe rapidement en raison de sa proximité avec l'Asie, mais Vancouver est toujours #1."
+        ]
+    },
+    {
+        question: "Quel territoire canadien contient l'endroit habité en permanence le plus au nord sur Terre ?",
+        answers: ["Yukon", "Territoires du Nord-Ouest", "Nunavut", "Aucun des ci-dessus"],
+        correct: 2,
+        image: "images/arctic.jpg",
+        credit: "Forces armées canadiennes",
+        message: [
+            "Le Yukon abrite le plus haut sommet (Mt. Logan), mais pas l'établissement le plus au nord.",
+            "Les TNO atteignent la côte arctique, mais le Nunavut s'étend beaucoup plus au nord.",
+            "Alert, Nunavut, est l'endroit habité en permanence le plus au nord sur Terre.",
+            "En fait, c'est un territoire — la réponse est le Nunavut !"
+        ]
+    },
+    {
+        question: "Quelle province canadienne a le plus grand nombre de sites du patrimoine mondial de l'UNESCO ?",
+        answers: ["Alberta", "Colombie-Britannique", "Nouvelle-Écosse", "Québec"],
+        correct: 2,
+        image: "images/unesco.jpg",
+        credit: "Parcs Canada",
+        message: [
+            "L'Alberta a plusieurs sites comme Head-Smashed-In Buffalo Jump, mais se classe derrière la Nouvelle-Écosse.",
+            "La Colombie-Britannique a moins de sites UNESCO comparé à la côte atlantique.",
+            "La Nouvelle-Écosse a trois sites : Lunenburg, Joggins Cliffs et Grand Pré.",
+            "Le Québec a deux sites (Vieux-Québec et Miguasha), mais la Nouvelle-Écosse en a trois."
+        ]
+    },
+    {
+        question: "Quelle banque canadienne est la plus ancienne, fondée en 1817 ?",
+        answers: ["RBC", "CIBC", "Banque de Montréal (BMO)", "Scotiabank"],
+        correct: 2,
+        image: "images/bmo.jpg",
+        credit: "Groupe Financier BMO",
+        message: [
+            "La RBC a été fondée à Halifax en 1864, beaucoup plus tard que la BMO.",
+            "La CIBC a été formée par une fusion, avec ses racines les plus anciennes datant de 1867.",
+            "La BMO a été fondée en 1817 et détient la première charte bancaire au Canada.",
+            "La Scotiabank a été fondée à Halifax en 1832."
+        ]
+    },
+    {
+        question: "Quelle ville canadienne abrite le plus grand pôle de l'industrie aérospatiale du pays ?",
+        answers: ["Toronto", "Montréal", "Calgary", "Ottawa"],
+        correct: 1,
+        image: "images/aerospace.jpg",
+        credit: "Aéro Montréal",
+        message: [
+            "Toronto a une présence aérospatiale significative, mais Montréal est le pôle mondial.",
+            "Montréal est l'une des principales villes aérospatiales au monde, aux côtés de Seattle et Toulouse.",
+            "Calgary a un secteur technologique en croissance, mais n'est pas le pôle aérospatial principal.",
+            "Ottawa se concentre plus sur la défense et les télécommunications que sur l'aérospatiale commerciale."
+        ]
+    },
+    {
+        question: "Quelle province est la seule où le droit civil (plutôt que le common law) est la base du droit privé ?",
+        answers: ["Nouveau-Brunswick", "Manitoba", "Québec", "Nouvelle-Écosse"],
+        correct: 2,
+        image: "images/courthouse.jpg",
+        credit: "Justice Canada",
+        message: [
+            "Le Nouveau-Brunswick suit le common law anglais pour ses affaires juridiques privées.",
+            "Le Manitoba, comme la plupart du Canada, est une juridiction de common law.",
+            "Le Québec est la seule province qui utilise un Code civil pour le droit privé.",
+            "La Nouvelle-Écosse suit le système de common law."
+        ]
+    },
+    {
+        question: "Quel parc national canadien est le plus grand par superficie terrestre ?",
+        answers: ["Banff", "Jasper", "Nahanni", "Wood Buffalo"],
+        correct: 3,
+        image: "images/nationalpark.jpg",
+        credit: "Parcs Canada",
+        message: [
+            "Banff était le premier parc national du Canada, mais il est beaucoup plus petit que Wood Buffalo.",
+            "Jasper est le plus grand dans les Rocheuses, mais Wood Buffalo est deux fois plus grand.",
+            "Nahanni est massif et beau, mais Wood Buffalo détient toujours le record de superficie terrestre.",
+            "Le Parc national Wood Buffalo est plus grand que la Suisse !"
+        ]
+    },
+    {
+        question: "Quelle ville canadienne a été la première à accueillir les Jeux Olympiques d'hiver ?",
+        answers: ["Vancouver", "Calgary", "Montréal", "Québec"],
+        correct: 1,
+        image: "images/olympics.jpg",
+        credit: "Olympic.ca",
+        message: [
+            "Vancouver a accueilli en 2010, ce qui était 22 ans après les premiers Jeux d'hiver canadiens.",
+            "Calgary a accueilli les Jeux Olympiques d'hiver en 1988.",
+            "Montréal a accueilli les Jeux Olympiques d'été en 1976, mais n'a jamais accueilli les Jeux d'hiver.",
+            "Québec a fait une offre pour les Jeux mais ne les a jamais accueillis."
+        ]
+    },
+    {
+        question: "Quelle province canadienne a le pourcentage le plus élevé de francophones en dehors du Québec ?",
+        answers: ["Manitoba", "Ontario", "Nouveau-Brunswick", "Nouvelle-Écosse"],
+        correct: 2,
+        image: "images/bilingual.jpg",
+        credit: "Bureau du Commissaire aux langues officielles",
+        message: [
+            "Le Manitoba a une communauté francophone fière, mais elle est plus petite en pourcentage que le NB.",
+            "L'Ontario a le plus grand *nombre* de francophones en dehors du Québec, mais pas le plus haut *pourcentage*.",
+            "Le Nouveau-Brunswick est environ 33 % francophone et est officiellement bilingue.",
+            "La Nouvelle-Écosse a la communauté acadienne, mais le pourcentage total est inférieur à celui du Nouveau-Brunswick."
+        ]
+    },
+    {
+        question: "Quelle entreprise canadienne a inventé le premier motoneige pratique au monde ?",
+        answers: ["John Deere Canada", "Canadian Tire", "Bombardier", "Polaris Canada"],
+        correct: 2,
+        image: "images/snowmobile.jpg",
+        credit: "Musée Bombardier",
+        message: [
+            "John Deere est célèbre pour les tracteurs, mais pas pour l'invention de la motoneige.",
+            "Canadian Tire vend de l'équipement de motoneige, mais c'est un détaillant, pas l'inventeur.",
+            "J-Armand Bombardier a inventé la motoneige pour aider les gens à voyager en hiver.",
+            "Polaris est un fabricant majeur, mais ils n'ont pas inventé la motoneige pratique."
+        ]
+    }
+];
+
+let currentLanguage = 'en';
+let currentQuestions = questions;
 let currentQuestion = 0;
 let score = 0;
 let time = 0;
@@ -273,14 +538,33 @@ const nextBtn = document.getElementById("next-btn");
 const scoreEl = document.getElementById("score");
 const timerEl = document.getElementById("timer");
 const questionNumberEl = document.getElementById("question-number");
+const langToggle = document.getElementById("lang-toggle");
 
 const imageEl = document.getElementById("question-image");
 const imageCreditEl = document.getElementById("image-credit");
 
+function switchLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+    currentQuestions = currentLanguage === 'en' ? questions : frenchQuestions;
+    document.documentElement.lang = currentLanguage;
+    document.title = currentLanguage === 'en' ? "ProM Fiscal Year End Celebration Trivia" : "Trivia de la Célébration de Fin d'Exercice de ProM";
+    document.querySelector("h1").textContent = currentLanguage === 'en' ? "ProM Fiscal Year End Celebration Trivia" : "Trivia de la Célébration de Fin d'Exercice de ProM";
+    langToggle.textContent = currentLanguage === 'en' ? "Français" : "English";
+    resetQuiz();
+    showQuestion();
+}
+
+function resetQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    time = 0;
+    stopTimer();
+}
+
 function startTimer() {
     timerInterval = setInterval(() => {
         time++;
-        timerEl.textContent = `Time: ${time}s`;
+        timerEl.textContent = currentLanguage === 'en' ? `Time: ${time}s` : `Temps: ${time}s`;
     }, 1000);
 }
 
@@ -289,14 +573,15 @@ function stopTimer() {
 }
 
 function showQuestion() {
-    const q = questions[currentQuestion];
+    const q = currentQuestions[currentQuestion];
     questionEl.textContent = q.question;
     answersEl.innerHTML = "";
     feedbackEl.innerHTML = "";
     nextBtn.style.display = "none";
+    nextBtn.textContent = currentLanguage === 'en' ? "Next" : "Suivant";
 
-    questionNumberEl.textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
-    scoreEl.textContent = `Score: ${score}/${questions.length}`;
+    questionNumberEl.textContent = currentLanguage === 'en' ? `Question ${currentQuestion + 1} of ${currentQuestions.length}` : `Question ${currentQuestion + 1} sur ${currentQuestions.length}`;
+    scoreEl.textContent = currentLanguage === 'en' ? `Score: ${score}/${currentQuestions.length}` : `Score: ${score}/${currentQuestions.length}`;
 
     // Image handling
     if (q.image) {
@@ -325,18 +610,18 @@ function checkAnswer(selectedIndex) {
     const allButtons = document.querySelectorAll(".answers .answers-button");
     allButtons.forEach(btn => btn.disabled = true);
 
-    const q = questions[currentQuestion];
+    const q = currentQuestions[currentQuestion];
     const isCorrect = selectedIndex === q.correct;
     if (isCorrect) score++;
 
-    scoreEl.textContent = `Score: ${score}/${questions.length}`;
+    scoreEl.textContent = currentLanguage === 'en' ? `Score: ${score}/${currentQuestions.length}` : `Score: ${score}/${currentQuestions.length}`;
 
     // Display correct/incorrect message above bullet points
     feedbackEl.innerHTML = ""; // clear previous
     // Create the correct/incorrect message div
     const statusDiv = document.createElement("div");
     statusDiv.className = "answer-status";  // base class
-    statusDiv.textContent = isCorrect ? "Correct!" : "Incorrect!";
+    statusDiv.textContent = isCorrect ? (currentLanguage === 'en' ? "Correct!" : "Correct !") : (currentLanguage === 'en' ? "Incorrect!" : "Incorrect !");
 
     // Add the correct/incorrect class for color
     statusDiv.classList.add(isCorrect ? "correct" : "incorrect");
@@ -356,12 +641,11 @@ function checkAnswer(selectedIndex) {
     nextBtn.style.display = "inline-block";
 }
 
-
 nextBtn.addEventListener("click", () => {
     currentQuestion++;
-    if (currentQuestion < questions.length) showQuestion();
+    if (currentQuestion < currentQuestions.length) showQuestion();
     else {
-        questionEl.textContent = `Quiz Finished! Final Score: ${score}/${questions.length}`;
+        questionEl.textContent = currentLanguage === 'en' ? `Quiz Finished! Final Score: ${score}/${currentQuestions.length}` : `Quiz terminé ! Score final : ${score}/${currentQuestions.length}`;
         answersEl.innerHTML = "";
         feedbackEl.innerHTML = "";
         questionNumberEl.textContent = "";
@@ -371,6 +655,8 @@ nextBtn.addEventListener("click", () => {
         stopTimer();
     }
 });
+
+langToggle.addEventListener("click", switchLanguage);
 
 // Start game
 showQuestion();
