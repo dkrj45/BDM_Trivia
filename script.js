@@ -4,7 +4,7 @@ const questions = [
         answers: ["British Columbia", "Newfoundland & Labrador", "Ontario", "Quebec"],
         correct: 2,
         image: "images/snowfall.jpg",
-        credit: "Environment and Climate Change Canada",
+        credit: "",
         message: [
             "BC has high elevation snow, but didn't take the top spot this year.",
             "Usually a leader, but Newfoundland saw a milder winter than central Canada.",
@@ -16,8 +16,8 @@ const questions = [
         question: "Who is the Canadian astronaut selected for NASA’s Artemis II mission?",
         answers: ["David Saint-Jacques", "Chris Hadfield", "Jeremy Hansen", "Robert Thirsk"],
         correct: 2,
-        image: "images/astronaut.jpg",
-        credit: "Canadian Space Agency",
+        image: "images/astronaut.png",
+        credit: "",
         message: [
             "David Saint-Jacques completed a mission to the ISS in 2018, but isn't on Artemis II.",
             "Chris Hadfield is a Canadian icon, but he is currently retired from active spaceflight.",
@@ -30,7 +30,7 @@ const questions = [
         answers: ["USA & Mexico", "USA & Brazil", "Mexico & Argentina", "USA & United Kingdom"],
         correct: 0,
         image: "images/worldcup.jpg",
-        credit: "FIFA / Canada Soccer",
+        credit: "",
         message: [
             "This will be the first World Cup hosted by three North American nations.",
             "Brazil hosted in 2014, but they are not part of the 2026 North American bid.",
@@ -42,8 +42,8 @@ const questions = [
         question: "What is the most-visited landmark in Canada?",
         answers: ["CN Tower", "Banff National Park", "Whistler Blackcomb", "Niagara Falls"],
         correct: 3,
-        image: "images/landmark.jpg",
-        credit: "Destination Ontario",
+        image: "images/canada.jpg",
+        credit: "",
         message: [
             "The CN Tower is iconic, but its numbers are lower than the massive crowds at the Falls.",
             "Banff sees millions of visitors, but Niagara Falls still holds the top spot for volume.",
@@ -267,7 +267,7 @@ const frenchQuestions = [
         answers: ["Colombie-Britannique", "Terre-Neuve-et-Labrador", "Ontario", "Québec"],
         correct: 2,
         image: "images/snowfall.jpg",
-        credit: "Environnement et Changement climatique Canada",
+        credit: "",
         message: [
             "La Colombie-Britannique a de la neige en altitude élevée, mais n'a pas pris la première place cette année.",
             "Habituellement un leader, mais Terre-Neuve a vu un hiver plus doux que le centre du Canada.",
@@ -279,8 +279,8 @@ const frenchQuestions = [
         question: "Quel astronaute canadien a été sélectionné pour la mission Artemis II de la NASA ?",
         answers: ["David Saint-Jacques", "Chris Hadfield", "Jeremy Hansen", "Robert Thirsk"],
         correct: 2,
-        image: "images/astronaut.jpg",
-        credit: "Agence spatiale canadienne",
+        image: "images/astronaut.png",
+        credit: "",
         message: [
             "David Saint-Jacques a effectué une mission à l'ISS en 2018, mais il ne fait pas partie d’Artemis II.",
             "Chris Hadfield est une icône canadienne, mais il est maintenant retraité du service spatial actif.",
@@ -293,7 +293,7 @@ const frenchQuestions = [
         answers: ["États-Unis et Mexique", "États-Unis et Brésil", "Mexique et Argentine", "États-Unis et Royaume-Uni"],
         correct: 0,
         image: "images/worldcup.jpg",
-        credit: "FIFA / Canada Soccer",
+        credit: "",
         message: [
             "Ce sera la première Coupe du Monde organisée par trois nations nord-américaines.",
             "Le Brésil a organisé en 2014, mais ils ne font pas partie de l'offre nord-américaine 2026.",
@@ -305,8 +305,8 @@ const frenchQuestions = [
         question: "Quel est le site touristique le plus visité au Canada ?",
         answers: ["Tour CN", "Parc national de Banff", "Whistler Blackcomb", "Le chutes du Niagara"],
         correct: 3,
-        image: "images/landmark.jpg",
-        credit: "Destination Ontario",
+        image: "images/canada.jpg",
+        credit: "",
         message: [
             "La Tour CN est emblématique, mais elle accueille moins de visiteurs que les foules massives des chutes.",
             "Banff voit des millions de visiteurs, mais les Chutes du Niagara détiennent toujours la première place en volume.",
