@@ -263,7 +263,7 @@ const questions = [
 
 const frenchQuestions = [
     {
-        question: "Quelle province a enregistré le plus de neige pendant la saison hivernale 2025-2026 ?",
+        question: "Quelle province a enregistré le plus de neige pendant durant la saison hivernale 2025-2026 ?",
         answers: ["Colombie-Britannique", "Terre-Neuve-et-Labrador", "Ontario", "Québec"],
         correct: 2,
         image: "images/snowfall.jpg",
@@ -276,16 +276,16 @@ const frenchQuestions = [
         ]
     },
     {
-        question: "Qui est l'astronaute canadien sélectionné pour la mission Artemis II de la NASA ?",
+        question: "Quel astronaute canadien a été sélectionné pour la mission Artemis II de la NASA ?",
         answers: ["David Saint-Jacques", "Chris Hadfield", "Jeremy Hansen", "Robert Thirsk"],
         correct: 2,
         image: "images/astronaut.jpg",
         credit: "Agence spatiale canadienne",
         message: [
-            "David Saint-Jacques a terminé une mission à l'ISS en 2018, mais n'est pas sur Artemis II.",
-            "Chris Hadfield est une icône canadienne, mais il est actuellement retraité du vol spatial actif.",
+            "David Saint-Jacques a effectué une mission à l'ISS en 2018, mais il ne fait pas partie d’Artemis II.",
+            "Chris Hadfield est une icône canadienne, mais il est maintenant retraité du service spatial actif.",
             "Jeremy Hansen sera le premier Canadien à voyager vers la Lune.",
-            "Robert Thirsk est un astronaute vétéran qui détient le record du temps le plus long en espace par un Canadien."
+            "Robert Thirsk est un astronaute chevronné qui détient le record du plus long séjour dans l’espace pour un Canadien."
         ]
     },
     {
@@ -297,38 +297,38 @@ const frenchQuestions = [
         message: [
             "Ce sera la première Coupe du Monde organisée par trois nations nord-américaines.",
             "Le Brésil a organisé en 2014, mais ils ne font pas partie de l'offre nord-américaine 2026.",
-            "L'Argentine co-organisera l'ouverture 2030, mais ne fait pas partie de ce tournoi 2026.",
-            "Le Royaume-Uni n'est pas impliqué ; les matchs sont répartis au Canada, aux États-Unis et au Mexique."
+            "L'Argentine codirigé le match d’ouverture de 2030, mais ne participe pas au tournoi de 2026.",
+            "Le Royaume-Uni n'est pas impliqué les matchs sont répartis entre le Canada, les États-Unis et le Mexique."
         ]
     },
     {
-        question: "Quel est le monument le plus visité au Canada ?",
-        answers: ["Tour CN", "Parc national de Banff", "Whistler Blackcomb", "Chutes du Niagara"],
+        question: "Quel est le site touristique le plus visité au Canada ?",
+        answers: ["Tour CN", "Parc national de Banff", "Whistler Blackcomb", "Le chutes du Niagara"],
         correct: 3,
         image: "images/landmark.jpg",
         credit: "Destination Ontario",
         message: [
-            "La Tour CN est emblématique, mais ses chiffres sont inférieurs aux foules massives aux Chutes.",
+            "La Tour CN est emblématique, mais elle accueille moins de visiteurs que les foules massives des chutes.",
             "Banff voit des millions de visiteurs, mais les Chutes du Niagara détiennent toujours la première place en volume.",
-            "Whistler est une destination de ski de premier plan, mais ne correspond pas au trafic piétonnier annuel des Chutes du Niagara.",
+            "Whistler est une destination de ski de premier plan, mais n’égale pas l’achalandage annuel des chutes.",
             "Les Chutes du Niagara attirent plus de 12 millions de visiteurs par an."
         ]
     },
     {
-        question: "Lequel des aliments suivants est le plus fortement associé à l'identité culinaire de Montréal ?",
+        question: "Parmi les aliments suivants, lequel est le plus fortement associé à l’identité culinaire de Montréal ?",
         answers: ["Tourtière", "Poutine", "Barres Nanaimo", "BeaverTails"],
         correct: 1,
         image: "images/poutine.jpg",
         credit: "Tourisme Montréal",
         message: [
-            "La tourtière est une tarte à la viande classique du Québec, mais la poutine est plus globalement synonyme de Montréal.",
-            "Bien qu'inventée à Warwick/Drummondville, la poutine est l'exportation la plus emblématique de Montréal.",
+            "La tourtière est une tarte à la viande classique du Québec, mais la poutine est plus étroitement associée à Montréal à l’échelle mondiale.",
+            "Bien qu'inventée à Warwick/Drummondville, la poutine est l'exportation culinaire la plus emblématique de Montréal.",
             "Les barres Nanaimo sont originaires de Nanaimo, en Colombie-Britannique.",
-            "Les BeaverTails sont originaires d'Ottawa, bien qu'ils soient populaires dans tout le Canada."
+            "Les Queues de castor sont originaires d’Ottawa, même si elles sont populaires partout au Canada."
         ]
     },
     {
-        question: "Que signifie BDMISDB ?",
+        question: "Que signifie l’acronyme BDMISDB ?",
         answers: ["Direction de la Modernisation des Prestations, de l'Implémentation et de la Conception des Services", "Bureau de Gestion des Données des Prestations et d'Infrastructure des Systèmes", "Branche de la Modernisation Numérique, de l'Innovation, des Services et de la Base de Livraison", "Conseil de Division de Développement Commercial et de Stratégie d'Innovation"],
         correct: 0,
         image: "images/government.jpg",
@@ -360,21 +360,21 @@ const frenchQuestions = [
         image: "images/toronto_skyline.jpg",
         credit: "Statistique Canada",
         message: [
-            "Winnipeg a la plus haute *proportion* de résidents autochtones, mais pas le nombre total le plus élevé.",
-            "Toronto a le plus grand nombre total de personnes autochtones au Canada.",
-            "Edmonton a une population très grande, mais elle est derrière Toronto en nombre total.",
+            "Winnipeg a la plus forte proportion de résidents autochtones, mais pas le plus grand nombre total.",
+            "Toronto compte a le plus grand nombre total de personnes autochtones au Canada.",
+            " Edmonton a une population très grande, mais elle est derrière Toronto en nombre total.",
             "Vancouver a une population significative, mais elle se classe 4e derrière Toronto, Winnipeg et Edmonton."
         ]
     },
     {
-        question: "Quelle province canadienne a été la dernière à rejoindre la Confédération ?",
+        question: "Quelle province canadienne a été la dernière à se joindre à la Confédération ? ",
         answers: ["Alberta", "Saskatchewan", "Nunavut", "Terre-Neuve-et-Labrador"],
         correct: 3,
         image: "images/confederation.jpg",
         credit: "Bibliothèque et Archives Canada",
         message: [
-            "L'Alberta a rejoint en 1905, près de 45 ans avant que la dernière province ne rejoigne.",
-            "La Saskatchewan a également rejoint en 1905 avec l'Alberta.",
+            "L’Alberta a rejoint la Confédération en 1905, soit près de 45 ans avant la dernière province.",
+            "La Saskatchewan a également rejoint en 1905, en même temps que l’Alberta.",
             "Le Nunavut est un territoire, pas une province, et a été créé en 1999.",
             "Terre-Neuve-et-Labrador a rejoint le Canada en 1949."
         ]
@@ -387,9 +387,9 @@ const frenchQuestions = [
         credit: "Nutrien Corporate",
         message: [
             "Teck est une grande entreprise minière, mais elle se concentre sur le cuivre, le zinc et le charbon sidérurgique.",
-            "Barrick Gold est l'un des plus grands mineurs d'or au monde, pas un producteur de potasse.",
-            "Nutrien basé à Saskatoon est le premier producteur mondial de potasse.",
-            "Cameco est la plus grande entreprise cotée en bourse d'uranium au monde."
+            "Barrick Gold est l’un des plus grands producteurs d’or au monde, pas de potasse.",
+            "Nutrien, basée à Saskatoon, est le premier producteur mondial de potasse.",
+            "Cameco est la plus grande entreprise d’uranium cotée en bourse au monde."
         ]
     },
     {
@@ -415,7 +415,7 @@ const frenchQuestions = [
             "Le Yukon abrite le plus haut sommet (Mt. Logan), mais pas l'établissement le plus au nord.",
             "Les TNO atteignent la côte arctique, mais le Nunavut s'étend beaucoup plus au nord.",
             "Alert, Nunavut, est l'endroit habité en permanence le plus au nord sur Terre.",
-            "En fait, c'est un territoire — la réponse est le Nunavut !"
+            "En réalité, il s’agit bien d’un territoire : la bonne réponse est le Nunavut!"
         ]
     },
     {
@@ -425,9 +425,9 @@ const frenchQuestions = [
         image: "images/unesco.jpg",
         credit: "Parcs Canada",
         message: [
-            "L'Alberta a plusieurs sites comme Head-Smashed-In Buffalo Jump, mais se classe derrière la Nouvelle-Écosse.",
+            "L’Alberta possède plusieurs sites comme Head-Smashed-In Buffalo Jump, mais elle arrive derrière la Nouvelle-Écosse.",
             "La Colombie-Britannique a moins de sites UNESCO comparé à la côte atlantique.",
-            "La Nouvelle-Écosse a trois sites : Lunenburg, Joggins Cliffs et Grand Pré.",
+            "La Nouvelle-Écosse possède trois sites : Lunenburg, Joggins Cliffs et Grand Pré.",
             "Le Québec a deux sites (Vieux-Québec et Miguasha), mais la Nouvelle-Écosse en a trois."
         ]
     },
@@ -438,7 +438,7 @@ const frenchQuestions = [
         image: "images/bmo.jpg",
         credit: "Groupe Financier BMO",
         message: [
-            "La RBC a été fondée à Halifax en 1864, beaucoup plus tard que la BMO.",
+            "La RBC a été fondée à Halifax en 1864,bien après la BMO.",
             "La CIBC a été formée par une fusion, avec ses racines les plus anciennes datant de 1867.",
             "La BMO a été fondée en 1817 et détient la première charte bancaire au Canada.",
             "La Scotiabank a été fondée à Halifax en 1832."
@@ -453,7 +453,7 @@ const frenchQuestions = [
         message: [
             "Toronto a une présence aérospatiale significative, mais Montréal est le pôle mondial.",
             "Montréal est l'une des principales villes aérospatiales au monde, aux côtés de Seattle et Toulouse.",
-            "Calgary a un secteur technologique en croissance, mais n'est pas le pôle aérospatial principal.",
+            "Calgary a un secteur technologique en croissance, mais n'est pas le principal centre aérospatial.",
             "Ottawa se concentre plus sur la défense et les télécommunications que sur l'aérospatiale commerciale."
         ]
     },
@@ -471,7 +471,7 @@ const frenchQuestions = [
         ]
     },
     {
-        question: "Quel parc national canadien est le plus grand par superficie terrestre ?",
+        question: "Quel parc national canadien est le plus vaste en superficie terrestre ?",
         answers: ["Banff", "Jasper", "Nahanni", "Wood Buffalo"],
         correct: 3,
         image: "images/nationalpark.jpg",
@@ -479,7 +479,7 @@ const frenchQuestions = [
         message: [
             "Banff était le premier parc national du Canada, mais il est beaucoup plus petit que Wood Buffalo.",
             "Jasper est le plus grand dans les Rocheuses, mais Wood Buffalo est deux fois plus grand.",
-            "Nahanni est massif et beau, mais Wood Buffalo détient toujours le record de superficie terrestre.",
+            "Nahanni est immense et magnifique, mais Wood Buffalo détient toujours le record de superficie.",
             "Le Parc national Wood Buffalo est plus grand que la Suisse !"
         ]
     },
@@ -490,36 +490,36 @@ const frenchQuestions = [
         image: "images/olympics.jpg",
         credit: "Olympic.ca",
         message: [
-            "Vancouver a accueilli en 2010, ce qui était 22 ans après les premiers Jeux d'hiver canadiens.",
+            "Vancouver a accueilli les Jeux en 2010, soit 22 ans après les premiers Jeux d’hiver au Canada.",
             "Calgary a accueilli les Jeux Olympiques d'hiver en 1988.",
-            "Montréal a accueilli les Jeux Olympiques d'été en 1976, mais n'a jamais accueilli les Jeux d'hiver.",
-            "Québec a fait une offre pour les Jeux mais ne les a jamais accueillis."
+            "Montréal a accueilli les Jeux olympiques d’été en 1976, mais jamais les Jeux d’hiver.",
+            "Québec a présenté sa candidature, mais n’a jamais accueilli les Jeux."
         ]
     },
     {
-        question: "Quelle province canadienne a le pourcentage le plus élevé de francophones en dehors du Québec ?",
+        question: "Quelle province canadienne compte la plus forte proportion de francophones à l’extérieur du Québec ?",
         answers: ["Manitoba", "Ontario", "Nouveau-Brunswick", "Nouvelle-Écosse"],
         correct: 2,
         image: "images/bilingual.jpg",
         credit: "Bureau du Commissaire aux langues officielles",
         message: [
-            "Le Manitoba a une communauté francophone fière, mais elle est plus petite en pourcentage que le NB.",
-            "L'Ontario a le plus grand *nombre* de francophones en dehors du Québec, mais pas le plus haut *pourcentage*.",
-            "Le Nouveau-Brunswick est environ 33 % francophone et est officiellement bilingue.",
-            "La Nouvelle-Écosse a la communauté acadienne, mais le pourcentage total est inférieur à celui du Nouveau-Brunswick."
+            "Le Manitoba possède une fière communauté francophone, mais son pourcentage est inférieur à celui du N.-B.",
+            "L’Ontario compte le plus grand nombre de francophones hors Québec, mais pas la plus forte proportion.",
+            "Environ 33 % de la population du Nouveau-Brunswick est francophone, et la province est officiellement bilingue.",
+            "La Nouvelle-Écosse abrite une communauté acadienne, mais la proportion totale est inférieure à celle du Nouveau-Brunswick."
         ]
     },
     {
-        question: "Quelle entreprise canadienne a inventé le premier motoneige pratique au monde ?",
+        question: "Quelle entreprise canadienne a inventé la premier motoneige pratique au monde ?",
         answers: ["John Deere Canada", "Canadian Tire", "Bombardier", "Polaris Canada"],
         correct: 2,
         image: "images/snowmobile.jpg",
         credit: "Musée Bombardier",
         message: [
-            "John Deere est célèbre pour les tracteurs, mais pas pour l'invention de la motoneige.",
-            "Canadian Tire vend de l'équipement de motoneige, mais c'est un détaillant, pas l'inventeur.",
+            "John Deere est célèbre pour ses tracteurs, mais n’a pas inventé la motoneige.",
+            "Canadian Tire vend de l’équipement pour motoneiges, mais c’est un détaillant, pas l’inventeur.",
             "J-Armand Bombardier a inventé la motoneige pour aider les gens à voyager en hiver.",
-            "Polaris est un fabricant majeur, mais ils n'ont pas inventé la motoneige pratique."
+            "Polaris est un important fabricant, mais n’a pas inventé la motoneige pratique."
         ]
     }
 ];
